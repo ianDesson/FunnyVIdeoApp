@@ -11,8 +11,8 @@ import com.ian.desson.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FirebaseDatabase;
-    private DatabaseReference;
+    private FirebaseDatabase database;
+    private DatabaseReference dbReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
