@@ -11,13 +11,14 @@ import com.ian.desson.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FirebaseDatabase database;
     private DatabaseReference dbReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        dbReference = FirebaseDatabase.getInstance().getReference();
+
     }
 
     public void randomVideoButton(View view) {
