@@ -4,21 +4,21 @@ import java.io.Serializable;
 
 public class Video implements Serializable {
 
-    private String videoUrl;
+    private String videoId;
 
     public Video() {
-        videoUrl = null;
+        videoId = null;
     }
 
-    public Video(String url) {
-        videoUrl = url;
+    public Video(String id) {
+        videoId = id;
     }
 
-    public String getVideoUrl() {
-        return this.videoUrl;
+    public String getVideoId() {
+        return this.videoId;
     }
 
-    public void setVideoUrl(String url) {
-        videoUrl = url;
+    public void setVideoId(String id) {
+        videoId = id;
     }
 }

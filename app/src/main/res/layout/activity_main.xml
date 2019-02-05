@@ -7,18 +7,30 @@
     tools:context=".view.MainActivity"
     android:background="#CED3DC">
 
-    <Button
-        android:id="@+id/randomVideoButton"
-        android:minWidth="300dp"
-        android:minHeight="47dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/btn_rounded"
-        android:text="Random Video"
-        android:textColor="#FCF7F8"
-        android:textSize="28sp"
-        android:typeface="normal"
-        android:onClick="randomVideoButton"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <YouTubePlayerView
+            android:id="@+id/youtubePlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/randomVideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_rounded"
+            android:minWidth="300dp"
+            android:minHeight="47dp"
+            android:onClick="randomVideoButton"
+            android:text="Random Video"
+            android:textColor="#FCF7F8"
+            android:textSize="28sp"
+            android:typeface="normal" />
+    </LinearLayout>
 
 </RelativeLayout>
